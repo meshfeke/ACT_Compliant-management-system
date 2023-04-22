@@ -51,7 +51,7 @@ error:function (){}
   <body>
 	  <div id="login-page">
 	  	<div class="container">
-	<h3 align="center" style="color:#fff">Complaint Managent System </h3>
+	<h3 align="center" style="color:#fff">ACT Online Complaint Managent System Registration Form</h3>
 	<hr />
 		      <form class="form-login" method="post">
 		        <h2 class="form-login-heading">Student Registration</h2>
@@ -108,7 +108,7 @@ echo htmlentities($msg);
     <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
     <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
     <script>
-        $.backstretch("assets/img/login-bg.jpg", {speed: 500});
+        $.backstretch("assets/img/login-bg1.png", {speed: 500});
     </script>
 <script type = "enroll">
    <!--

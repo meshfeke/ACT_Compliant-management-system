@@ -1,0 +1,445 @@
+/*
+CSS Credit: http://www.templatemo.com/
+*/
+
+body {
+	
+	color: #ffffff;
+	background: #FFFFFF;
+	
+}
+
+
+a:link, a:visited { color: #99bf28; text-decoration: underline; } 
+a:active, a:hover { color: #99bf28; text-decoration:none; }
+
+
+.cleaner {
+	clear: both;
+	height: 1px;
+	width: 100%;
+	font-size: 1px;	
+}
+
+.cleaner_with_height {
+	clear: both;
+	height: 30px;
+	width: 100%;
+	font-size: 1px;	
+}
+
+/* top panel */
+
+#templatemo_top_panel{
+	width: 1230px;
+	position: relative;
+	height: 272px;	
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-bottom: 0px;
+	background: url(images/last.jpg);
+}
+#templatemo_top_panel #templatemo_top_section{
+	width: 530; /* + 30 for padding right */
+	height: 190px; /* + 100 for padding */
+	margin: 0 auto;
+	padding-top: 85px;
+	padding-right: 30px;
+	background:  url(images/templatemo_header.png) no-repeat;
+}
+#templatemo_top_section #site_title {
+	text-align: right;
+	font-size: 40px;
+	font-weight: bold;
+	padding: 10px 0;
+}
+
+#templatemo_top_section #site_tagline {
+	text-align: right;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 5px 0;
+	color: #dcff86;
+}
+
+/* TemplateMo menu */
+
+#templatemo_top_section  #templatemo_menu{
+	clear: both;
+	margin-top: 165px;
+	height: 35px;	
+	text-align: right;
+}
+
+#templatemo_menu ul {
+    text-align: right;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#templatemo_menu ul li{
+	display: inline;
+}
+
+#templatemo_menu ul li a{
+	padding: 2px 25px;
+	margin-right: 5px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: #fbe270;
+	border-right: 1px solid #5f3b11;	
+}
+
+#templatemo_menu li a:hover, #templatemo_menu li .current{
+	color: #ffffff;
+}
+
+#templatemo_menu li .last {
+	border-right: none;
+	padding-right: 0;
+}
+/* end of menu */
+
+/* end of top panel */
+
+/* content panel */
+
+#templatemo_content_panel{
+	clear: both;
+	width:100%;;
+}
+
+#templatemo_content_panel #templatemo_content_section{
+	clear: both;
+	overflow: hidden;
+	height: 100%;
+	width: 1000px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+#templatemo_content_section #templatemo_content_left {
+	float: left;
+	display: inline;
+	width: 240px;
+	margin-left: 0px;
+}
+
+#templatemo_content_section #templatemo_content_right {
+	float: right;
+	width: 730px;
+	margin-right: 0px;
+	background: #FFFFFF;
+}
+
+* html #templatemo_content_section #templatemo_content_right {
+	margin-right: 1px;
+}
+/* end of content panel */
+
+/* content left */
+
+#templatemo_content_left #login_section {
+	clear: both;
+	margin-bottom: 20px;
+}
+
+#login_section #login_section_top {
+	width: 240px;
+	height: 10px;
+	background: url(images/templatemo_login_section_top.jpg) no-repeat;
+}
+
+* html #login_section #login_section_top {
+	margin-bottom: -5px;
+}
+
+#login_section #login_section_title {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 10px 0 0 70px;
+	height: 30px; /* padding top 10px + */
+	background: url(images/templatemo_login_section_title.jpg) top center no-repeat;
+}
+
+#login_section #login_section_middle {
+	background-color: #5f8104;
+	padding: 10px 15px;
+}
+
+#login_section_middle form{
+	margin: 0 0 15px 0;
+	padding: 0 0 15px 0;
+	width: 100%;
+	text-align: right;
+	border-bottom: 3px dotted #ffffff;
+}
+
+
+#login_section_middle .form_row{
+	margin-bottom: 10px;
+}
+
+
+#login_section_middle label {
+	margin-right: 10px;
+}
+
+#login_section_middle input{
+	width: 120px;
+	height: 18px;
+}
+
+#login_section_middle .button{
+	width: 60px;
+	height: 25px;
+}
+
+#login_section #login_section_bottom {
+	width: 240px;
+	height: 10px;
+	background: url(images/templatemo_login_section_bottom.jpg) no-repeat;
+}
+
+#templatemo_content_left #left_column_section {
+	clear: both;
+	background-color: #123111;
+}
+
+#left_column_section #left_column_section_top {
+	width: 240px;
+	height: 10px;
+	background: url(images/templatemo_left_column_section_top.jpg) no-repeat;
+}
+
+* html #left_column_section #left_column_section_top {
+	margin-bottom: -5px;
+}
+
+#left_column_section #left_column_section_title {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 7px 0 0 70px;
+	height: 33px; /* padding top 7px + */
+	background: url(images/templatemo_left_column_section_title.jpg) top center no-repeat;
+}
+
+#left_column_section #left_column_section_middle {
+
+	padding: 0 15px 10px 15px;
+	background: url(images/templatemo_left_column_section_bottom.jpg) center bottom no-repeat;
+}
+
+#left_column_section_middle .popular_post {
+	clear: both;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	border-bottom: 3px dotted #525252;
+}
+
+#left_column_section_middle .popular_post h1 {
+	margin: 10px 0 5px 0;
+	padding: 0px;
+	font-size: 12px;
+	color: #00FFFF;
+	
+}
+
+.popular_post p{
+	margin: 0 0 0 10px;
+	font-size: 16px;
+	padding: 0px;
+}
+
+/* end of content left */
+
+/* content right */
+
+#templatemo_content_right .right_column_section {
+	background-color: #095197;
+	
+}
+
+.right_column_section .right_column_section_title {
+	height: 50px;
+	background: url(images/templatemo_right_section_bg.jpg) no-repeat;
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 30px 0 0 10px;
+}
+
+.right_column_section .right_column_section_body {
+	clear: both;
+	padding: 0 0px 0 0px;
+	width: 1000px;
+}
+
+.right_column_section_body  .image_box {
+	float: left;
+	width: 750px;
+    height: 350px;	
+	padding: 0 0 40px 0;
+}
+
+.right_column_section_body  .post_body {
+	width: 800px;
+	height: 400px;
+	float: right;
+}
+
+.right_column_section_body p{
+	padding: 0 0 20px 0;
+	margin: 0px;
+	font-size: 15px;
+	width:900px;
+}
+
+.post_body  .posted_by {
+	color: #ffc600;
+	font-size: 16px;
+	font-weight: normal;
+	margin: 0 0 15px 0;
+	padding: 0px;
+}
+
+.posted_by a, a:hover, a:visited {
+	color: #7eff00;
+}
+
+.right_column_section_body .post_info {
+	height: 70px;
+	margin-top: 15px;
+	color: #5cc311;
+}
+
+.post_info .comment {
+	padding: 0 0 0 20px;
+	margin-right: 30px;
+	background: url(images/templatemo_comment_icon.jpg) top left no-repeat;
+}
+
+/* end of content right */
+
+/* bottom panel */
+#templatemo_bottom_panel {
+	clear: both;
+	width: 100%;	
+	background-color: #080808 ;
+}
+
+#templatemo_bottom_panel  #templatemo_bottom_section {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 90px;
+	width: 870px;
+	margin: auto;
+}
+
+#templatemo_bottom_section h1 {
+	color: #c7f119;
+	padding: 0px;
+	margin: 0 0 15px 0;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#templatemo_bottom_section h2 {
+	color: #f6ff00;
+	padding: 0px;
+	margin: 0 0 5px 0;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+#templatemo_bottom_section .templatemo_bottom_section_01 {
+	float: left;
+	margin-right: 30px;
+	width: 240px;
+	background-color: #151515; 
+}
+
+.templatemo_bottom_section_01 .templatemo_bottom_section_01_top {
+	height: 10px;
+	background: url(images/templatemo_bottom_section_top.jpg) no-repeat;
+}
+
+.templatemo_bottom_section_01 .templatemo_bottom_section_01_middle {
+	padding: 10px 15px 0 15px;
+}
+
+.templatemo_bottom_section_01_middle  .most_commented_post {
+	clear: both;
+	
+	margin: 0 0 5px 0;
+	padding: 0 0 5px 0;
+	border-bottom: 1px dotted #333;
+}
+
+.most_commented_post .comment {
+	background: url(images/templatemo_comment_icon_02.jpg) right center no-repeat;
+	float: left;
+	min-width: 40px;
+	margin-left: 10px;
+	padding-right: 20px;
+}
+
+.templatemo_bottom_section_01_middle a, a:visited{
+	color: #fff;
+	text-decoration: none;
+}
+
+.templatemo_bottom_section_01_middle a:active, a:hover{
+	color: #f6ff00;
+	text-decoration: none;
+}
+
+.templatemo_bottom_section_01_middle ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.templatemo_bottom_section_01_middle ul li{
+	list-style: none;
+	margin: 0 0 5px 0;
+	padding: 0 0 5px 0;
+	border-bottom: 1px dotted #333;
+}
+
+.templatemo_bottom_section_01 .templatemo_bottom_section_01_bottom {
+	width: 240px;
+	height: 10px;
+	background: url(images/templatemo_bottom_section_bottom.jpg) no-repeat;
+}
+
+* html .templatemo_bottom_section_01 .templatemo_bottom_section_01_bottom {
+	margin-bottom: -5px;
+}
+
+
+#templatemo_bottom_section .templatemo_bottom_section_02 {
+	float: left;
+	padding-top: 20px;
+	width: 300px;
+}
+
+/* end of bottom panel */
+
+/* footer */
+
+#templatemo_footer_panel{
+	width: 100%;
+	background-color: #000000;
+}
+
+#templatemo_footer_panel #templatemo_footer_section{
+	text-align: center;
+	width: 560px;
+	margin: 0 auto;
+	padding: 5px 0;
+}
+/* end of footer */
