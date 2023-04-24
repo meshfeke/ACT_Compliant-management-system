@@ -1,0 +1,10 @@
+
+  
+  {
+  "realm": "Project",
+  "auth-server-url": "http://localhost:8280/auth/",
+  "ssl-required": "external",
+  "resource": "php_client",
+  "public-client": true,
+  "confidential-port": 0
+}
