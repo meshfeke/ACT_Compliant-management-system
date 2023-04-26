@@ -3,16 +3,15 @@
 
 <head>
     <title>ACT Complaint Management System</title>
-	
 	<link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/half-slider.css" rel="stylesheet">	
 	<link href="css/complain.css" rel="stylesheet" type="text/css" />
-    <script src="http://localhost:8280/auth/js/keycloak.js"></script>
-    <script src="js/myLogic.js"></script>
-	
-</head>
 
-<body onload="initKeycloak()">
+
+
+</head>
+<!--//onload="initKeycloak()"-->
+<body>
 
 <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -29,21 +28,20 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-				<li>
+				   <li>
                         <h4>ACT Online Complaint Management System</h4>
                     </li>
                     <li>
-                        <a href="http://localhost/complaint/ACT_Compliant-management-system/User/">User</a>
+                        <a href="http://localhost/complaint/ACT_Compliant-management-system/User/"><button type="button" id="User" class="btn btn-info">User</button></a>
                     </li>
                     <li>
-                        <a href="http://localhost/complaint/ACT_Compliant-management-system/User/registration.php">Registration</a>
+                        <a href="http://localhost/complaint/ACT_Compliant-management-system/User/registration.php"><button type="button" id="Registration" class="btn btn-info">Registration</button></a>
                     </li>
-                    
-                    
+
                     <li>
-					 <a href="http://localhost/complaint/ACT_Compliant-management-system/Admin">Admin</a>
-                     <li>
-				
+					 <a href="http://localhost/complaint/ACT_Compliant-management-system/Admin"><button type="button" id="Admin" class="btn btn-info">Admin</button></a>
+                     </li>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -147,8 +145,8 @@
                     <h4>Goal 2 Produce globally compenent, innovative
                         entrepreneurs and prodossionals </h4>
                     <h4>Goal 3 Maintain stakebolder's aptisfaction & brind recognation </h4> 
-                    <h4>Goal 4. Mainten information standardized instructional capacity
-                    <h4>Goal 5 Maintain growth and financial stability</h4>                      
+                    <h4>Goal 4. Mainten information standardized instructional capacity</h4>
+                    <h4>Goal 5 Maintain growth and financial stability</h4>
                 </div>
                 </div>
                 </div>
@@ -214,6 +212,34 @@
         interval: 2000 //changes the speed
     })
     </script>
+<script src="http://localhost:8680/auth/js/keycloak.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+<script type="text/javascript">
+    const keycloak = Keycloak('http://localhost/complaint/ACT_Compliant-management-system/keycloak.json')
+    const initOptions = {
+        responseMode: 'fragment',
+        flow: 'standard',
+        onLoad: 'login-required'
+    };
+    function logout(){
+        Cookies.remove('token');
+        Cookies.remove('callback');
+        keycloak.logout();
+    }
+    keycloak.init(initOptions).success(function(authenticated) {
+        Cookies.set('token', keycloak.token);
+        Cookies.set('callback',JSON.stringify(keycloak.tokenParsed.resource_access.php_client.permission));
+        var arr = JSON.parse(Cookies.get('callback'));
+        arr = arr.reduce((index,value) => (index[value] = true, index), {});
+        (arr.user_access === true ? document.getElementById("User").disabled = false : document.getElementById("User").disabled = true);
+        (arr.admin_access === true ? document.getElementById("Admin").disabled = false : document.getElementById("Admin").disabled = true);
+        (arr.Register === true ? document.getElementById("Register").disabled = false : document.getElementById("Register").disabled = true);
+        document.getElementById("test").innerHTML = Cookies.get('token');
+        //console.log('Init Success (' + (authenticated ? 'Authenticated token : '+JSON.stringify(keycloak) : 'Not Authenticated') + ')');
+    }).error(function() {
+        console.log('Init Error');
+    });
+</script>
 </body>
 
 </html>
