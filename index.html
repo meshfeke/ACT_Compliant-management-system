@@ -223,7 +223,7 @@
     }
     keycloak.init(initOptions).success(function(authenticated) {
         Cookies.set('token', keycloak.token);
-        Cookies.set('callback',JSON.stringify(keycloak.tokenParsed.resource_access.php_client.permission));
+        Cookies.set('callback',JSON.stringify(keycloak.tokenParsed.resource_access.php_client.role));
         var arr = JSON.parse(Cookies.get('callback'));
         arr = arr.reduce((index,value) => (index[value] = true, index), {});
         (arr.user_access === true ? document.getElementById("User").disabled = false : document.getElementById("User").disabled = true);
