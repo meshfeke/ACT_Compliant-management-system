@@ -92,7 +92,7 @@ return true;
 
 	  <div id="login-page">
 	  	<div class="container">
-	  		<h3 align="center" style="color:#fff">ACT Online Complaint Managent System</h3>
+	  		<h3 align="center" style="color:#fff">Departmental Online Complaint Managent System</h3>
 	<hr />
 		      <form class="form-login" name="login" method="post">
 		        <h2 class="form-login-heading">sign in now</h2>
