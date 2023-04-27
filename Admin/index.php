@@ -114,7 +114,7 @@ exit();
 		<div class="container">
 			 
 
-			<b class="copyright">&copy;ACT</b> All rights reserved for ACT Administration, ADDIS ABEBA, ETHIOPIA.
+			<b class="copyright">&copy;CMS</b> All rights reserved for Shimelis Fikadu, ADDIS ABEBA, ETHIOPIA.
 		</div>
 	</div>
 	<script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
